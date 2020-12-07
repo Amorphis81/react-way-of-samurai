@@ -1,0 +1,54 @@
+.dialogs{
+  &__title{ margin-bottom: 20px; }
+  &__wrapper { display: flex; }
+  &__list { width: 25%; }
+  &__messages { width: 70%; }
+  &-list{
+    &__item{
+      margin-bottom: 20px;
+      font-size: 1.2rem;
+      cursor: pointer;
+      a {
+        text-decoration: none;
+        color: $text;
+        &.active{ font-size: 1.8rem;}
+      }
+    }
+  }
+  &-messages{
+    &__item {
+      margin-bottom: 20px;
+      display: flex;
+      font-size: 1.2rem;
+    }
+    &__avatar{ margin-right: 30px; }
+    &__name { text-align: center;}
+    &__img {
+      width: 70px;
+      height: 70px;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      border-radius: 50%;
+    }
+    &__text {
+      position: relative;
+      padding: 10px;
+      max-width: 400px;
+      border: 1px solid grey;
+      -webkit-border-radius: 15px;
+      -moz-border-radius: 15px;
+      border-radius: 15px;
+      &::before{
+        content: '';
+        position: absolute;
+        top: 9px;
+        left: -15px;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 10px 15px 10px 0;
+        border-color: transparent grey transparent transparent;
+      }
+    }
+  }
+}

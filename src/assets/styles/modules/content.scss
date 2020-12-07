@@ -1,0 +1,9 @@
+.content{
+  //padding: 25px;
+  //grid-area: content;
+  //background-color: white;
+  &__img{
+    height: 200px;
+    img{ height: 100%; }
+  }
+}
