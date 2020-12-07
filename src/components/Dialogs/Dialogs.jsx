@@ -2,67 +2,45 @@ import React from "react";
 import avatar from "../../assets/img/avatar.jpg";
 import {NavLink} from "react-router-dom";
 
+const DialogItem = (props) => {
+  const path = `/dialogs/${props.id}`;
+  return (
+    <li className="dialogs-list__item">
+      <NavLink to={path} activeClassName={'active'}>{props.name}</NavLink>
+    </li>
+  )
+}
+
+const Message = (props) => {
+  return (
+    <div className="dialogs-messages__item">
+      <div className="dialogs-messages__avatar">
+        <img src={avatar} alt="avatar" className="dialogs-messages__img"/>
+        <div className="dialogs-messages__name">Nike</div>
+      </div>
+      <div className="dialogs-messages__text">{props.message}</div>
+    </div>
+  )
+}
+
 const Dialogs = (props) => {
   return (
     <div className={'dialogs'}>
       <h2 className="h2 dialogs__title">Диалоги</h2>
       <div className="dialogs__wrapper">
         <ul className="dialogs__list dialogs-list">
-          <li className="dialogs-list__item">
-            <NavLink to={'/dialogs/1'} activeClassName={'active'}>Nike</NavLink>
-          </li>
-          <li className="dialogs-list__item">
-            <NavLink to={'/dialogs/2'} activeClassName={'active'}>Mike</NavLink>
-          </li>
-          <li className="dialogs-list__item">
-            <NavLink to={'/dialogs/3'} activeClassName={'active'}>Tramp</NavLink>
-          </li>
-          <li className="dialogs-list__item">
-            <NavLink to={'/dialogs/4'} activeClassName={'active'}>Obama</NavLink>
-          </li>
-          <li className="dialogs-list__item">
-            <NavLink to={'/dialogs/5'} activeClassName={'active'}>Alex</NavLink>
-          </li>
-          <li className="dialogs-list__item">
-            <NavLink to={'/dialogs/6'} activeClassName={'active'}>Victor</NavLink>
-          </li>
+          <DialogItem name={'Nike'} id={1}/>
+          <DialogItem name={'Mike'} id={2}/>
+          <DialogItem name={'Tramp'} id={3}/>
+          <DialogItem name={'Obama'} id={4}/>
+          <DialogItem name={'Alex'} id={5}/>
+          <DialogItem name={'Victor'} id={6}/>
         </ul>
         <div className="dialogs__messages dialogs-messages">
-          <div className="dialogs-messages__item">
-            <div className="dialogs-messages__avatar">
-              <img src={avatar} alt="avatar" className="dialogs-messages__img"/>
-              <div className="dialogs-messages__name">Nike</div>
-            </div>
-            <div className="dialogs-messages__text">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. A architecto, atque, beatae blanditiis dolor
-              eaque excepturi impedit laboriosam minima natus necessitatibus nesciunt quaerat rerum sint unde, velit
-              voluptate. Aliquid, magni?
-            </div>
-          </div>
-
-          <div className="dialogs-messages__item">
-            <div className="dialogs-messages__avatar">
-              <img src={avatar} alt="avatar" className="dialogs-messages__img"/>
-              <div className="dialogs-messages__name">Obama</div>
-            </div>
-            <div className="dialogs-messages__text">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. A architecto, atque, beatae blanditiis dolor
-              eaque excepturi impedit laboriosam minima natus necessitatibus nesciunt quaerat rerum sint unde, velit
-              voluptate. Aliquid, magni?
-            </div>
-          </div>
-
-          <div className="dialogs-messages__item">
-            <div className="dialogs-messages__avatar">
-              <img src={avatar} alt="avatar" className="dialogs-messages__img"/>
-              <div className="dialogs-messages__name">Tramp</div>
-            </div>
-            <div className="dialogs-messages__text">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. A architecto, atque, beatae blanditiis dolor
-              eaque excepturi impedit laboriosam minima natus necessitatibus nesciunt quaerat rerum sint unde, velit
-              voluptate. Aliquid, magni?
-            </div>
-          </div>
+          <Message message={'test'}/>
+          <Message message={'You'}/>
+          <Message message={'Yahoo'}/>
+          <Message message={'test123'}/>
         </div>
       </div>
     </div>
