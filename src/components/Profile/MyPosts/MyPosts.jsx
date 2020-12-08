@@ -1,6 +1,10 @@
 import Post from "./Post/Post";
 
 const MyPosts = () => {
+  const postData = [
+    {id: 1, message: 'Test mess 1', likeCounts: 15},
+    {id: 2, message: 'Test mess 2', likeCounts: 20},
+  ]
   return (
     <div className={'posts-wrapper'}>
       <h2 className="h2 posts-wrapper__title">My posts</h2>
@@ -12,8 +16,8 @@ const MyPosts = () => {
         </div>
       </div>
       <div className={'posts content__posts'}>
-        <Post message={'Hi, how are you?'} likeCounts={15}/>
-        <Post message={"It's my first post"} likeCounts={20}/>
+        <Post message={postData[0].message} likeCounts={postData[0].likeCounts}/>
+        <Post message={postData[1].message} likeCounts={postData[1].likeCounts}/>
       </div>
     </div>
   );

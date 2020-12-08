@@ -24,6 +24,11 @@ const Message = (props) => {
 }
 
 const Dialogs = (props) => {
+  const dialogsData = props.dialogsData;
+  const messagesData = props.messagesData;
+  const dialogsItemArray = dialogsData.map( el => {
+    return `<DialogItem name={${el.name}} id={${el.id}}/>`
+  });
   return (
     <div className={'dialogs'}>
       <h2 className="h2 dialogs__title">Диалоги</h2>
