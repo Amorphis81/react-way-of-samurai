@@ -1,27 +1,6 @@
 import React from "react";
-import avatar from "../../assets/img/avatar.jpg";
-import {NavLink} from "react-router-dom";
-
-const DialogItem = (props) => {
-  const path = `/dialogs/${props.id}`;
-  return (
-    <li className="dialogs-list__item">
-      <NavLink to={path} activeClassName={'active'}>{props.name}</NavLink>
-    </li>
-  )
-}
-
-const Message = (props) => {
-  return (
-    <div className="dialogs-messages__item">
-      <div className="dialogs-messages__avatar">
-        <img src={avatar} alt="avatar" className="dialogs-messages__img"/>
-        <div className="dialogs-messages__name">Nike</div>
-      </div>
-      <div className="dialogs-messages__text">{props.message}</div>
-    </div>
-  )
-}
+import DialogItem from "./DialogItem/DialogItem";
+import Message from "./Message/Message";
 
 const Dialogs = (props) => {
   const dialogsElements = props.dialogsData.map( d => <DialogItem id={d.id} name={d.name} /> );
