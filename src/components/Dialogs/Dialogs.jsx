@@ -24,29 +24,15 @@ const Message = (props) => {
 }
 
 const Dialogs = (props) => {
-  const dialogsData = props.dialogsData;
-  const messagesData = props.messagesData;
-  const dialogsItemArray = dialogsData.map( el => {
-    return `<DialogItem name={${el.name}} id={${el.id}}/>`
-  });
+  const dialogsElements = props.dialogsData.map( d => <DialogItem id={d.id} name={d.name} /> );
+  const messagesElements = props.messagesData.map( m => <Message message={m.message}/> );
+
   return (
     <div className={'dialogs'}>
       <h2 className="h2 dialogs__title">Диалоги</h2>
       <div className="dialogs__wrapper">
-        <ul className="dialogs__list dialogs-list">
-          <DialogItem name={'Nike'} id={1}/>
-          <DialogItem name={'Mike'} id={2}/>
-          <DialogItem name={'Tramp'} id={3}/>
-          <DialogItem name={'Obama'} id={4}/>
-          <DialogItem name={'Alex'} id={5}/>
-          <DialogItem name={'Victor'} id={6}/>
-        </ul>
-        <div className="dialogs__messages dialogs-messages">
-          <Message message={'test'}/>
-          <Message message={'You'}/>
-          <Message message={'Yahoo'}/>
-          <Message message={'test123'}/>
-        </div>
+        <ul className="dialogs__list dialogs-list">{dialogsElements}</ul>
+        <div className="dialogs__messages dialogs-messages">{messagesElements}</div>
       </div>
     </div>
   )

@@ -1,10 +1,12 @@
 import Post from "./Post/Post";
 
 const MyPosts = () => {
-  const postData = [
+  const postsData = [
     {id: 1, message: 'Test mess 1', likeCounts: 15},
     {id: 2, message: 'Test mess 2', likeCounts: 20},
   ]
+  const posts = postsData.map(p => <Post message={p.message} likeCounts={p.likeCounts}/>)
+
   return (
     <div className={'posts-wrapper'}>
       <h2 className="h2 posts-wrapper__title">My posts</h2>
@@ -15,10 +17,7 @@ const MyPosts = () => {
           <button className={'btn new-post__btn'}>Add Post</button>
         </div>
       </div>
-      <div className={'posts content__posts'}>
-        <Post message={postData[0].message} likeCounts={postData[0].likeCounts}/>
-        <Post message={postData[1].message} likeCounts={postData[1].likeCounts}/>
-      </div>
+      <div className={'posts content__posts'}>{posts}</div>
     </div>
   );
 }
