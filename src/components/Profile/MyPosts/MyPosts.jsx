@@ -1,11 +1,7 @@
 import Post from "./Post/Post";
 
-const MyPosts = () => {
-  const posts = [
-    {id: 1, message: 'Test mess 1', likeCounts: 15},
-    {id: 2, message: 'Test mess 2', likeCounts: 20},
-  ]
-  const postsElements = posts.map(p => <Post message={p.message} likeCounts={p.likeCounts}/>)
+const MyPosts = (props) => {
+  const postsElements = props.posts.map(p => <Post message={p.message} likeCounts={p.likeCounts} key={p.id} />)
 
   return (
     <div className={'posts-wrapper'}>
