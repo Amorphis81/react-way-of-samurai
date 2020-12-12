@@ -4,6 +4,7 @@
 @import "./modules/content";
 @import "modules/posts";
 @import "./modules/dialogs";
+@import "./modules/sidebar";
 
 body{
   background-color: #f1f1f1;
@@ -23,7 +24,7 @@ img{
   grid-template-areas:
   "header header"
   "nav content";
-  grid-template-columns: 2fr 10fr;
+  grid-template-columns: 1fr 3fr;
   grid-gap: 20px;
   &-content{
     padding: 25px;

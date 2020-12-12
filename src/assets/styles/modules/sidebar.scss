@@ -1,0 +1,25 @@
+.sidebar{
+  &__title {
+    margin-bottom: 10px;
+  }
+  &__list{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+    &-item{
+      display: flex;
+      flex-direction: column;
+      text-decoration: none;
+      color: $text;
+    }
+    &-avatar{
+      margin-bottom: 10px;
+      border-radius: 50%;
+      width: 70px;
+      height: 70px;
+    }
+    &-name{
+      text-align: center;
+    }
+  }
+}

@@ -5,11 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c0503a42-b79e-49f0-b66a-2c58628607ea" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/assets/styles/modules/sidebar.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Navbar/Sidebar/Sidebar.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/redux/state.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/styles/App.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/styles/App.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/styles/modules/nav.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/styles/modules/nav.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Dialogs/Dialogs.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Dialogs/Dialogs.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Profile/MyPosts/MyPosts.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/MyPosts/MyPosts.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Navbar/Navbar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navbar/Navbar.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Profile/Profile.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/Profile.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
     </list>
@@ -35,17 +40,39 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../laragon-local/sites/orising" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../laragon-local/sites/top-smoke" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="yarn" />
+    <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\PhpStorm 2020.2.1\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Dev\it-kamasutra\react_1\react-way-of-samurai\src" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\Dev\it-kamasutra\react_1\react-way-of-samurai\src\redux" />
       <recent name="E:\Dev\it-kamasutra\react_1\react-way-of-samurai\src\assets\styles\modules" />
       <recent name="E:\Dev\it-kamasutra\react_1\react-way-of-samurai\src\assets\styles\modules\posts" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.start" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -62,7 +89,10 @@
       <workItem from="1607446796012" duration="619000" />
       <workItem from="1607449552969" duration="5100000" />
       <workItem from="1607527188677" duration="7056000" />
-      <workItem from="1607613241060" duration="3607000" />
+      <workItem from="1607613241060" duration="3825000" />
+      <workItem from="1607715604089" duration="4675000" />
+      <workItem from="1607763461941" duration="86000" />
+      <workItem from="1607789314419" duration="4042000" />
     </task>
     <task id="LOCAL-00001" summary="Lesson 24">
       <created>1607348322083</created>
@@ -92,7 +122,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607534174799</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Lesson 28">
+      <created>1607623195653</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1607623195653</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -114,6 +151,7 @@
     <MESSAGE value="Lesson 24" />
     <MESSAGE value="Lesson 25" />
     <MESSAGE value="Lesson 26" />
-    <option name="LAST_COMMIT_MESSAGE" value="Lesson 26" />
+    <MESSAGE value="Lesson 28" />
+    <option name="LAST_COMMIT_MESSAGE" value="Lesson 28" />
   </component>
 </project>
