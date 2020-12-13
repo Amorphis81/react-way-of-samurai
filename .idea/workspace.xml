@@ -5,18 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c0503a42-b79e-49f0-b66a-2c58628607ea" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/assets/styles/modules/sidebar.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Navbar/Sidebar/Sidebar.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/redux/state.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/styles/modules/profile/profile.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/styles/modules/small/new-post.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Dialogs/AddMessage/AddMessage.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/render.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/assets/styles/App.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/styles/App.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/styles/modules/nav.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/styles/modules/nav.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/styles/modules/dialogs.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/styles/modules/messages/dialogs.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/styles/modules/nav.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/styles/modules/navbar/nav.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/styles/modules/posts.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/styles/modules/profile/posts.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/styles/modules/sidebar.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/styles/modules/navbar/sidebar.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Dialogs/Dialogs.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Dialogs/Dialogs.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Navbar/Navbar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navbar/Navbar.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Profile/MyPosts/MyPosts.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/MyPosts/MyPosts.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Profile/Profile.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/Profile.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/state.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/state.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,9 +57,11 @@
       <recent name="E:\Dev\it-kamasutra\react_1\react-way-of-samurai\src" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\Dev\it-kamasutra\react_1\react-way-of-samurai\src\assets\styles\modules\navbar" />
+      <recent name="E:\Dev\it-kamasutra\react_1\react-way-of-samurai\src\assets\styles\modules\messages" />
+      <recent name="E:\Dev\it-kamasutra\react_1\react-way-of-samurai\src\assets\styles\modules\profile" />
       <recent name="E:\Dev\it-kamasutra\react_1\react-way-of-samurai\src\redux" />
       <recent name="E:\Dev\it-kamasutra\react_1\react-way-of-samurai\src\assets\styles\modules" />
-      <recent name="E:\Dev\it-kamasutra\react_1\react-way-of-samurai\src\assets\styles\modules\posts" />
     </key>
   </component>
   <component name="RunManager">
@@ -92,7 +99,8 @@
       <workItem from="1607613241060" duration="3825000" />
       <workItem from="1607715604089" duration="4675000" />
       <workItem from="1607763461941" duration="86000" />
-      <workItem from="1607789314419" duration="4042000" />
+      <workItem from="1607789314419" duration="8490000" />
+      <workItem from="1607851426774" duration="7696000" />
     </task>
     <task id="LOCAL-00001" summary="Lesson 24">
       <created>1607348322083</created>
@@ -129,7 +137,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607623195653</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Lesson 29">
+      <created>1607793535038</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1607793535038</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -152,6 +167,7 @@
     <MESSAGE value="Lesson 25" />
     <MESSAGE value="Lesson 26" />
     <MESSAGE value="Lesson 28" />
-    <option name="LAST_COMMIT_MESSAGE" value="Lesson 28" />
+    <MESSAGE value="Lesson 29" />
+    <option name="LAST_COMMIT_MESSAGE" value="Lesson 29" />
   </component>
 </project>

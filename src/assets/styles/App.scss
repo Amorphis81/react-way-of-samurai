@@ -1,10 +1,12 @@
 @import "vars";
 @import "./modules/header";
-@import "./modules/nav";
+@import "modules/navbar/nav";
+@import "modules/navbar/sidebar";
 @import "./modules/content";
-@import "modules/posts";
-@import "./modules/dialogs";
-@import "./modules/sidebar";
+@import "modules/profile/posts";
+@import "./modules/profile/profile";
+@import "modules/messages/dialogs";
+@import "./modules/small/new-post";
 
 body{
   background-color: #f1f1f1;

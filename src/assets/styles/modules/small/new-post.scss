@@ -1,0 +1,8 @@
+.new-post{
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+  }
+  &__textarea{ margin-bottom: 10px;  }
+}
