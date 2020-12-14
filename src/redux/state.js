@@ -6,6 +6,7 @@ const state = {
       {id: 1, message: 'Test mess 1', likeCounts: 15},
       {id: 2, message: 'Test mess 2', likeCounts: 20},
     ],
+    newPostText: 'it-kamasutra'
   },
   messagesPage: {
     dialogs: [
@@ -29,13 +30,21 @@ const state = {
   ]
 }
 
-export const addPost = (postMessage) => {
+
+
+export const addPost = () => {
   const newPost = {
     id: 3,
-    message: postMessage,
-    likeCounts: 30
+    message: state.profilePage.newPostText,
+    likeCounts: 0
   };
   state.profilePage.posts.push(newPost);
+  rerenderEntireTree(state);
+  state.profilePage.newPostText = '';
+}
+
+export const updateNewPostText = (newText) => {
+  state.profilePage.newPostText = newText;
   rerenderEntireTree(state);
 }
 
