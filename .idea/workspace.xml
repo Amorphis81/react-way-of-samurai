@@ -7,7 +7,10 @@
     <list default="true" id="c0503a42-b79e-49f0-b66a-2c58628607ea" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Profile/MyPosts/MyPosts.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/MyPosts/MyPosts.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Dialogs/AddMessage/AddMessage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Dialogs/AddMessage/AddMessage.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Dialogs/Dialogs.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Dialogs/Dialogs.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/redux/state.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/state.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -99,7 +102,7 @@
       <workItem from="1608112606587" duration="9272000" />
       <workItem from="1608732219314" duration="316000" />
       <workItem from="1608737433645" duration="30000" />
-      <workItem from="1608748631462" duration="685000" />
+      <workItem from="1608748631462" duration="3675000" />
     </task>
     <task id="LOCAL-00001" summary="Lesson 24">
       <created>1607348322083</created>
@@ -171,7 +174,14 @@
       <option name="project" value="LOCAL" />
       <updated>1608151512947</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Lesson 39">
+      <created>1608749471626</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1608749471626</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -199,6 +209,7 @@
     <MESSAGE value="Lesson 34" />
     <MESSAGE value="Lesson 37" />
     <MESSAGE value="Lesson 38" />
-    <option name="LAST_COMMIT_MESSAGE" value="Lesson 38" />
+    <MESSAGE value="Lesson 39" />
+    <option name="LAST_COMMIT_MESSAGE" value="Lesson 39" />
   </component>
 </project>
