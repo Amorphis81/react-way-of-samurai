@@ -1,12 +1,9 @@
 import React from "react";
-import {
-  sendMessageCreator,
-  updateNewMessageBodyCreator,
-} from "../../../redux/state";
+import {sendMessageCreator, updateNewMessageBodyCreator} from "../../../redux/messages-reducer";
+
 
 
 const AddMessage = (props) => {
-
   const addMessage = () => {
     props.dispatch(sendMessageCreator())
   }
