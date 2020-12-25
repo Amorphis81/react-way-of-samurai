@@ -1,7 +1,7 @@
 const ADD_POST = 'ADD-POST';
 const UPDATE_NEW_POST_TEXT = 'UPDATE-NEW-POST-TEXT';
-const ADD_MESSAGE = 'ADD_MESSAGE';
-const UPDATE_NEW_MESSAGE_TEXT = 'UPDATE-NEW-MESSAGE-TEXT';
+const SEND_MESSAGE = 'SEND_MESSAGE';
+const UPDATE_NEW_MESSAGE_BODY = 'UPDATE-NEW-MESSAGE-BODY';
 
 export let store = {
   _postId: 3,
@@ -28,7 +28,7 @@ export let store = {
         {id: 2, message: 'Ho ho'},
         {id: 3, message: 'Hu hu'},
       ],
-      newMessageText: 'My cool message!!!',
+      newMessageBody: 'My cool message!!!',
     },
     sidebar: [
       {id: 1, name: 'Bill'},
@@ -61,17 +61,17 @@ export let store = {
     } else if (action.type === UPDATE_NEW_POST_TEXT) {
       this._state.profilePage.newPostText = action.newText;
       this._callSubscriber(this._state);
-    } else if (action.type === ADD_MESSAGE) {
+    } else if (action.type === SEND_MESSAGE) {
       let newMessage = {
         id: this._messageId,
-        message: this._state.messagesPage.newMessageText,
+        message: this._state.messagesPage.newMessageBody,
       };
       this._state.messagesPage.messages.push(newMessage);
       this._callSubscriber(this._state);
-      this._state.messagesPage.newMessageText = '';
+      this._state.messagesPage.newMessageBody = '';
       this._messageId++;
-    } else if (action.type === UPDATE_NEW_MESSAGE_TEXT) {
-      this._state.messagesPage.newMessageText = action.newText;
+    } else if (action.type === UPDATE_NEW_MESSAGE_BODY) {
+      this._state.messagesPage.newMessageBody = action.body;
       this._callSubscriber(this._state);
     }
   },
@@ -79,14 +79,14 @@ export let store = {
 
 export const addPostActionCreator = () => ( {type: ADD_POST} )
 
-export const addMessageActionCreator = () => ( {type: ADD_MESSAGE} )
+export const sendMessageCreator = () => ( {type: SEND_MESSAGE} )
 
 export const updateNewPostTextActionCreator = (text) => ({
     type: UPDATE_NEW_POST_TEXT,
     newText: text,
 })
 
-export const updateNewMessageTextActionCreator = (text) => ({
-    type: UPDATE_NEW_MESSAGE_TEXT,
-    newText: text,
+export const updateNewMessageBodyCreator = (text) => ({
+    type: UPDATE_NEW_MESSAGE_BODY,
+    body: text,
 })
