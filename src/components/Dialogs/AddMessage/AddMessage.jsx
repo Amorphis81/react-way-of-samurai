@@ -1,24 +1,19 @@
 import React from "react";
-import {sendMessageCreator, updateNewMessageBodyCreator} from "../../../redux/messages-reducer";
-
-
 
 const AddMessage = (props) => {
-  const addMessage = () => {
-    props.dispatch(sendMessageCreator())
-  }
-  const onMessageChange = (e) => {
+  const onSendMessageClick = () => props.sendMessage();
+
+  const onNewMessageChange = (e) => {
     const text = e.target.value;
-    const action = updateNewMessageBodyCreator(text);
-    props.dispatch(action);
+    props.onMessageChange(text);
   }
 
   return (
     <div className="new-post dialogs__new-post">
       <h3 className={'h3 new-post__title'}>Add Message</h3>
       <div className="new-post__inner">
-        <textarea value={props.newMessageText} onChange={ onMessageChange } className={'new-post__textarea'} cols="30" rows="4"/>
-        <button onClick={ addMessage } className={'btn new-post__btn'}>Add Message</button>
+        <textarea value={props.newMessageText} onChange={ onNewMessageChange } className={'new-post__textarea'} cols="30" rows="4"/>
+        <button onClick={ onSendMessageClick } className={'btn new-post__btn'}>Add Message</button>
       </div>
     </div>
   )
