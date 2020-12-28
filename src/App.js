@@ -13,14 +13,15 @@ const App = (props) => {
   return (
     <div className={'app-wrapper'}>
       <Header/>
-      <Navbar sidebar={props.state.sidebar}/>
+      {/*<Navbar sidebar={props.state.sidebar}/>*/}
+      <Navbar />
       <main className="app-wrapper-content">
         <Switch>
           <Route path={'/profile'}>
-            <Profile store={props.store} />
+            <Profile />
           </Route>
           <Route path={'/dialogs'}>
-            <Dialogs store={props.store} />
+            <Dialogs />
           </Route>
           <Route path={'/news'}>
             <News />

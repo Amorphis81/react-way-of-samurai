@@ -1,22 +1,31 @@
 import React from "react";
 import {sendMessageCreator, updateNewMessageBodyCreator} from "../../../redux/messages-reducer";
 import AddMessage from "./AddMessage";
+import StoreContext from "../../../StoreContext";
 
 
 const AddMessageContainer = (props) => {
-  const state = props.store.getState();
+  return (
+    <StoreContext.Consumer>
+      {
+        store => {
+          const state = store.getState();
 
-  const sendMessageClick = () => props.store.dispatch(sendMessageCreator());
+          const sendMessageClick = () => store.dispatch(sendMessageCreator());
 
-  const onMessageChange = (text) => {
-    const action = updateNewMessageBodyCreator(text);
-    props.store.dispatch(action);
-  }
+          const onMessageChange = (text) => {
+            const action = updateNewMessageBodyCreator(text);
+            store.dispatch(action);
+          }
 
-  return <AddMessage sendMessage={sendMessageClick}
-                     onMessageChange={onMessageChange}
-                     newMessageText={state.messagesPage.newMessageBody} />
+          return <AddMessage sendMessage={sendMessageClick}
+                             onMessageChange={onMessageChange}
+                             newMessageText={state.messagesPage.newMessageBody}/>
+        }
+      }
 
+    </StoreContext.Consumer>
+  )
 }
 
 export default AddMessageContainer;

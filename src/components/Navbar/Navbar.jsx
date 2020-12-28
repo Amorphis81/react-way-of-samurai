@@ -12,7 +12,7 @@ const Navbar = (props) => {
         <NavLink to="/music" className={'nav__item'} activeClassName="active">Music</NavLink>
         <NavLink to="/settings" className={'nav__item'} activeClassName="active">Settings</NavLink>
       </nav>
-      <Sidebar sidebar={props.sidebar} />
+      {/*<Sidebar sidebar={props.sidebar} />*/}
     </div>
   );
 }
