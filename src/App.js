@@ -8,6 +8,7 @@ import { Switch, Route } from "react-router-dom";
 import News from "./components/News/News";
 import Music from "./components/Music/Music";
 import Settings from "./components/Settings/Settings";
+import DialogsContainer from "./components/Dialogs/DialogsContainer";
 
 const App = (props) => {
   return (
@@ -21,7 +22,7 @@ const App = (props) => {
             <Profile />
           </Route>
           <Route path={'/dialogs'}>
-            <Dialogs />
+            <DialogsContainer />
           </Route>
           <Route path={'/news'}>
             <News />
