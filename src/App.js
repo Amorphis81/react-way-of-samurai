@@ -14,7 +14,6 @@ const App = (props) => {
   return (
     <div className={'app-wrapper'}>
       <Header/>
-      {/*<Navbar sidebar={props.state.sidebar}/>*/}
       <Navbar />
       <main className="app-wrapper-content">
         <Switch>
