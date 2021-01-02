@@ -1,12 +1,5 @@
 @import "vars";
-@import "./modules/header";
-@import "modules/navbar/nav";
-@import "modules/navbar/sidebar";
-@import "./modules/content";
-@import "modules/profile/posts";
-@import "./modules/profile/profile";
-@import "modules/messages/dialogs";
-@import "./modules/small/new-post";
+
 
 body{
   background-color: #f1f1f1;
@@ -45,3 +38,20 @@ img{
   cursor: pointer;
   border: 1px solid transparent;
 }
+
+.avatar{
+  margin-bottom: 10px;
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+}
+
+@import "./modules/header";
+@import "modules/navbar/nav";
+@import "modules/navbar/sidebar";
+@import "./modules/content";
+@import "modules/profile/posts";
+@import "./modules/profile/profile";
+@import "modules/messages/dialogs";
+@import "./modules/small/new-post";
+@import "./modules/users/users";

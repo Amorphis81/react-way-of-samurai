@@ -5,11 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c0503a42-b79e-49f0-b66a-2c58628607ea" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/Navbar/Sidebar/SidebarContainer.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/styles/modules/users/users.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Users/UsersContainer.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Users/UsersItem/UsersItem.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/redux/users-reducer.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/styles/App.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/styles/App.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Navbar/Navbar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navbar/Navbar.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/sidebar-reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/sidebar-reducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/News/News.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Users/Users.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/redux-store.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/redux-store.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,7 +40,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js.last.introduce.type" value="CONST" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components/Dialogs" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/redux" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -47,10 +53,10 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Dev\it-kamasutra\react_1\react-way-of-samurai\src\redux" />
       <recent name="E:\Dev\it-kamasutra\react_1\react-way-of-samurai\src\components\Dialogs" />
       <recent name="E:\Dev\it-kamasutra\react_1\react-way-of-samurai\src\components\Dialogs\AddMessage" />
       <recent name="E:\Dev\it-kamasutra\react_1\react-way-of-samurai\src\components\Profile\MyPosts" />
-      <recent name="E:\Dev\it-kamasutra\react_1\react-way-of-samurai\src\redux" />
       <recent name="E:\Dev\it-kamasutra\react_1\react-way-of-samurai\src" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -121,7 +127,8 @@
       <workItem from="1609245229747" duration="2162000" />
       <workItem from="1609319564414" duration="8681000" />
       <workItem from="1609406869883" duration="7259000" />
-      <workItem from="1609505694450" duration="1272000" />
+      <workItem from="1609505694450" duration="3677000" />
+      <workItem from="1609510498192" duration="23181000" />
     </task>
     <task id="LOCAL-00001" summary="Lesson 24">
       <created>1607348322083</created>
@@ -256,7 +263,14 @@
       <option name="project" value="LOCAL" />
       <updated>1609506832521</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Lesson 48 Fix SideBar">
+      <created>1609507560378</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1609507560378</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -293,6 +307,7 @@
     <MESSAGE value="Lesson 45" />
     <MESSAGE value="Lesson 46" />
     <MESSAGE value="Lesson 48" />
-    <option name="LAST_COMMIT_MESSAGE" value="Lesson 48" />
+    <MESSAGE value="Lesson 48 Fix SideBar" />
+    <option name="LAST_COMMIT_MESSAGE" value="Lesson 48 Fix SideBar" />
   </component>
 </project>
