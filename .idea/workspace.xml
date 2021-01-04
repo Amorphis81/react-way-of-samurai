@@ -135,7 +135,7 @@
       <workItem from="1609676202791" duration="587000" />
       <workItem from="1609678270793" duration="4919000" />
       <workItem from="1609685983111" duration="1530000" />
-      <workItem from="1609772476807" duration="5838000" />
+      <workItem from="1609772476807" duration="6200000" />
     </task>
     <task id="LOCAL-00001" summary="Lesson 24">
       <created>1607348322083</created>
@@ -331,6 +331,7 @@
     <MESSAGE value="Lesson 48 Fix SideBar" />
     <MESSAGE value="Lesson 49" />
     <MESSAGE value="Lesson 51" />
-    <option name="LAST_COMMIT_MESSAGE" value="Lesson 51" />
+    <MESSAGE value="Lesson 54" />
+    <option name="LAST_COMMIT_MESSAGE" value="Lesson 54" />
   </component>
 </project>
