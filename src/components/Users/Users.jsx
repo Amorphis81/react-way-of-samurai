@@ -1,51 +1,24 @@
 import React from "react";
 import UsersItem from "./UsersItem/UsersItem";
 import avatar from "../../assets/img/avatar.jpg";
+import axios from "axios";
 
 const Users = (props) => {
-  if (props.users.length === 0) {
-    props.setUsers([
-      {
-        id: 1,
-        photoUrl: avatar,
-        followed: false,
-        fullName: 'Bill Gates',
-        status: 'I`am a boss',
-        location: {city: 'Minsk', country: 'Belarus'}
-      },
-      {
-        id: 2,
-        photoUrl: avatar,
-        followed: false,
-        fullName: 'Alexey Navalny',
-        status: 'I`am a boss too',
-        location: {city: 'Moscow', country: 'Russia'}
-      },
-      {
-        id: 3,
-        photoUrl: avatar,
-        followed: true,
-        fullName: 'Andrew Malakhov',
-        status: 'I`am a boss three',
-        location: {city: 'Apatity', country: 'Russia'}
-      },
-      {
-        id: 4,
-        photoUrl: avatar,
-        followed: true,
-        fullName: 'Alex Pankratov',
-        status: 'I`am a boss four',
-        location: {city: 'Kirovsk', country: 'Russia'}
-      },
-    ]);
+  const getUsers = () => {
+    if (props.users.length === 0) {
+      axios.get("https://social-network.samuraijs.com/api/1.0/users")
+        .then(response => {
+          props.setUsers(response.data.items);
+      });
+    }
   }
 
   const usersList = props.users.map(users => <UsersItem
                       id={users.id}
                       key={users.id}
-                      photoUrl={users.photoUrl}
+                      photoUrl={users.photos.small}
                       folowed={users.followed}
-                      fullName={users.fullName}
+                      name={users.name}
                       status={users.status}
                       location={users.location}
                       follow={props.follow}
@@ -53,6 +26,7 @@ const Users = (props) => {
   />);
   return (
     <div className={'users'}>
+      <button onClick={getUsers}>Get Users</button>
       <h2 className="h2 users__title">Users</h2>
       <div className="users__list users-list">
         {usersList}

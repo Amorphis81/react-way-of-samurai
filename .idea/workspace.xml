@@ -5,17 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c0503a42-b79e-49f0-b66a-2c58628607ea" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/assets/styles/modules/users/users.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Users/UsersContainer.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Users/UsersItem/UsersItem.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/redux/users-reducer.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/styles/App.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/styles/App.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Navbar/Navbar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navbar/Navbar.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/News/News.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Users/Users.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/redux-store.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/redux-store.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Users/Users.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Users/Users.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Users/UsersItem/UsersItem.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Users/UsersItem/UsersItem.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/users-reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/users-reducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,6 +23,13 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="hiddenUrls">
+      <set>
+        <option value="https://github.com/Amorphis81/react-way-of-samurai" />
+      </set>
+    </option>
   </component>
   <component name="ProjectId" id="1lKFG9ta5aIYItrFfe2hudk6Jqi" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -129,6 +132,12 @@
       <workItem from="1609406869883" duration="7259000" />
       <workItem from="1609505694450" duration="3677000" />
       <workItem from="1609510498192" duration="23181000" />
+      <workItem from="1609596562346" duration="1323000" />
+      <workItem from="1609603559992" duration="1190000" />
+      <workItem from="1609676202791" duration="587000" />
+      <workItem from="1609678270793" duration="4919000" />
+      <workItem from="1609685983111" duration="1530000" />
+      <workItem from="1609772476807" duration="675000" />
     </task>
     <task id="LOCAL-00001" summary="Lesson 24">
       <created>1607348322083</created>
@@ -270,7 +279,14 @@
       <option name="project" value="LOCAL" />
       <updated>1609507560378</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="Lesson 49">
+      <created>1609596769285</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1609596769285</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -308,6 +324,7 @@
     <MESSAGE value="Lesson 46" />
     <MESSAGE value="Lesson 48" />
     <MESSAGE value="Lesson 48 Fix SideBar" />
-    <option name="LAST_COMMIT_MESSAGE" value="Lesson 48 Fix SideBar" />
+    <MESSAGE value="Lesson 49" />
+    <option name="LAST_COMMIT_MESSAGE" value="Lesson 49" />
   </component>
 </project>
