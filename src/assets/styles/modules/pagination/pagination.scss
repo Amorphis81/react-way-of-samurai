@@ -1,0 +1,11 @@
+.pagination{
+  &__item{
+    cursor: pointer;
+    &:not(:last-child){
+      margin-right: 9px;
+    }
+    &.active{
+      font-weight: bold;
+    }
+  }
+}
