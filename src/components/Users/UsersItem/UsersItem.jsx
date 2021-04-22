@@ -1,5 +1,6 @@
 import React from "react";
 import avatar from "../../../assets/img/avatar.jpg";
+import {Link} from "react-router-dom";
 
 const UsersItem = props => {
   const onFollowClick = () => props.follow(props.id);
@@ -13,7 +14,9 @@ const UsersItem = props => {
   return (
     <div className={'users-list__item'}>
       <div className="users-list__avatar-path">
-        <img src={photoSrc} alt="avatar" className="avatar users-list__avatar"/>
+        <Link to={`/profile/${props.id}`}>
+          <img src={photoSrc} alt="avatar" className="avatar users-list__avatar"/>
+        </Link>
         {followToggle()}
       </div>
       <div className="users-list__status-path status-path">

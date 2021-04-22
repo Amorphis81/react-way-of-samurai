@@ -46,6 +46,11 @@ img{
   height: 70px;
 }
 
+.preloader{
+  width: 300px;
+  height: 300px;
+}
+
 @import "./modules/header";
 @import "modules/navbar/nav";
 @import "modules/navbar/sidebar";

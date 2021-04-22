@@ -4,13 +4,28 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c0503a42-b79e-49f0-b66a-2c58628607ea" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/assets/styles/modules/pagination/pagination.scss" afterDir="false" />
+    <list default="true" id="c0503a42-b79e-49f0-b66a-2c58628607ea" name="Default Changelist" comment="lesson 56">
+      <change afterPath="$PROJECT_DIR$/src/assets/img/Eclipse-1s-94px.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/img/preloader.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Profile/ProfileContainer.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/common/Preloader/Preloader.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/assets/styles/App.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/styles/App.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/styles/modules/profile/profile.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/styles/modules/profile/profile.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Dialogs/Dialogs.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Dialogs/Dialogs.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Dialogs/DialogsContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Dialogs/DialogsContainer.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Profile/MyPosts/MyPosts.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/MyPosts/MyPosts.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Profile/MyPosts/MyPostsContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/MyPosts/MyPostsContainer.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Profile/Profile.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/Profile.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Profile/ProfileInfo/ProfileInfo.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/ProfileInfo/ProfileInfo.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Users/Users.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Users/Users.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Users/UsersContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Users/UsersContainer.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Users/UsersItem/UsersItem.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Users/UsersItem/UsersItem.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/messages-reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/messages-reducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/profile-reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/profile-reducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/redux-store.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/redux-store.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/redux/users-reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/users-reducer.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -23,6 +38,14 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="GithubPullRequestsUISettings">
     <option name="hiddenUrls">
@@ -43,7 +66,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js.last.introduce.type" value="CONST" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components/Users" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../openserver_5_3_5/OSPanel/domains/lapushka/wp-content/themes/lapushka" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -56,11 +79,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Dev\it-kamasutra\react_1\react-way-of-samurai\src\components\Profile" />
       <recent name="E:\Dev\it-kamasutra\react_1\react-way-of-samurai\src\components\Users" />
       <recent name="E:\Dev\it-kamasutra\react_1\react-way-of-samurai\src\redux" />
       <recent name="E:\Dev\it-kamasutra\react_1\react-way-of-samurai\src\components\Dialogs" />
       <recent name="E:\Dev\it-kamasutra\react_1\react-way-of-samurai\src\components\Dialogs\AddMessage" />
-      <recent name="E:\Dev\it-kamasutra\react_1\react-way-of-samurai\src\components\Profile\MyPosts" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\Dev\it-kamasutra\react_1\react-way-of-samurai\src\assets\styles\modules\navbar" />
@@ -139,7 +162,29 @@
       <workItem from="1609685983111" duration="1530000" />
       <workItem from="1609772476807" duration="6434000" />
       <workItem from="1609846939259" duration="879000" />
-      <workItem from="1609850238347" duration="11004000" />
+      <workItem from="1609850238347" duration="12414000" />
+      <workItem from="1609955816471" duration="4195000" />
+      <workItem from="1609963349419" duration="758000" />
+      <workItem from="1610011155798" duration="8220000" />
+      <workItem from="1610108081161" duration="7691000" />
+      <workItem from="1610186030545" duration="15705000" />
+      <workItem from="1610286890760" duration="131000" />
+      <workItem from="1610292278977" duration="3571000" />
+      <workItem from="1610356441529" duration="17000" />
+      <workItem from="1617799941570" duration="706000" />
+      <workItem from="1617863692706" duration="876000" />
+      <workItem from="1617864709459" duration="4077000" />
+      <workItem from="1617974496035" duration="8334000" />
+      <workItem from="1618037443996" duration="5997000" />
+      <workItem from="1618125138720" duration="4016000" />
+      <workItem from="1618213128085" duration="2554000" />
+      <workItem from="1618296454593" duration="5163000" />
+      <workItem from="1618327541471" duration="10000" />
+      <workItem from="1618383678344" duration="6505000" />
+      <workItem from="1618472615901" duration="2448000" />
+      <workItem from="1618571334973" duration="3136000" />
+      <workItem from="1618640665349" duration="399000" />
+      <workItem from="1618642116077" duration="1199000" />
     </task>
     <task id="LOCAL-00001" summary="Lesson 24">
       <created>1607348322083</created>
@@ -309,7 +354,14 @@
       <option name="project" value="LOCAL" />
       <updated>1609792457368</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="lesson 56">
+      <created>1609868351992</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1609868351992</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -351,6 +403,7 @@
     <MESSAGE value="Lesson 51" />
     <MESSAGE value="Lesson 54" />
     <MESSAGE value="Lesson 54.1" />
-    <option name="LAST_COMMIT_MESSAGE" value="Lesson 54.1" />
+    <MESSAGE value="lesson 56" />
+    <option name="LAST_COMMIT_MESSAGE" value="lesson 56" />
   </component>
 </project>

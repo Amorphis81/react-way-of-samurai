@@ -1,3 +1,18 @@
 .profile{
+  &-info{
+    display: flex;
+    &__avatar{ margin-right: 10px; }
+    &__descr{
+      padding: 10px;
+      border: 1px solid grey;
+      border-radius: 15px;
+    }
+    &__row{ display: flex; }
+    &__caption{ margin-right: 5px;}
+    .job-row{
+      display: flex;
+      &__looking { margin-right: 5px; }
+    }
+  }
   &__new-post{ margin-bottom: 20px; }
 }

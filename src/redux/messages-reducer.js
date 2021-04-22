@@ -16,11 +16,10 @@ const initialState = {
     {id: 2, message: 'Ho ho'},
     {id: 3, message: 'Hu hu'},
   ],
-  newMessageBody: 'My cool message!!!',
+  newMessageBody: '',
 }
 
 const messagesReducer = (state = initialState, action) => {
-  let stateCopy;
   switch (action.type) {
     case SEND_MESSAGE:
       let newMessage = {
@@ -44,9 +43,9 @@ const messagesReducer = (state = initialState, action) => {
   }
 }
 
-export const sendMessageCreator = () => ({type: SEND_MESSAGE})
+export const sendMessage = () => ({type: SEND_MESSAGE})
 
-export const updateNewMessageBodyCreator = (text) => ({
+export const updateNewMessageBody = (text) => ({
   type: UPDATE_NEW_MESSAGE_BODY,
   body: text,
 })

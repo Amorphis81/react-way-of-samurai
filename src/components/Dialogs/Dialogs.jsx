@@ -24,7 +24,9 @@ const Dialogs = (props) => {
       <div className="new-post dialogs__new-post">
         <h3 className={'h3 new-post__title'}>Add Message</h3>
         <div className="new-post__inner">
-          <textarea value={props.messagesPage.newMessageBody} onChange={ onNewMessageChange } className={'new-post__textarea'} cols="30" rows="4"/>
+          <textarea placeholder="Enter you message" value={props.messagesPage.newMessageBody}
+                    onChange={ onNewMessageChange }
+                    className={'new-post__textarea'} cols="30" rows="4"/>
           <button onClick={ onSendMessageClick } className={'btn new-post__btn'}>Add Message</button>
         </div>
       </div>
