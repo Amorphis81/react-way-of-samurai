@@ -4,13 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c0503a42-b79e-49f0-b66a-2c58628607ea" name="Default Changelist" comment="lesson 59">
-      <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+    <list default="true" id="c0503a42-b79e-49f0-b66a-2c58628607ea" name="Default Changelist" comment="lesson 60">
+      <change afterPath="$PROJECT_DIR$/src/components/Header/HeaderContainer.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/redux/auth-reducer.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Profile/ProfileContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/ProfileContainer.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/styles/modules/header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/styles/modules/header.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/Header.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/redux-store.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/redux-store.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,7 +52,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js.last.introduce.type" value="CONST" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../openserver_5_3_5/OSPanel/domains/lapushka/wp-content/themes/lapushka" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components/Header" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -63,11 +65,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Dev\it-kamasutra\react_1\react-way-of-samurai\src\components\Header" />
+      <recent name="E:\Dev\it-kamasutra\react_1\react-way-of-samurai\src\redux" />
       <recent name="E:\Dev\it-kamasutra\react_1\react-way-of-samurai\src\components\Profile" />
       <recent name="E:\Dev\it-kamasutra\react_1\react-way-of-samurai\src\components\Users" />
-      <recent name="E:\Dev\it-kamasutra\react_1\react-way-of-samurai\src\redux" />
       <recent name="E:\Dev\it-kamasutra\react_1\react-way-of-samurai\src\components\Dialogs" />
-      <recent name="E:\Dev\it-kamasutra\react_1\react-way-of-samurai\src\components\Dialogs\AddMessage" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\Dev\it-kamasutra\react_1\react-way-of-samurai\src\assets\styles\modules\navbar" />
@@ -364,7 +366,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Lesson 24" />
     <MESSAGE value="Lesson 25" />
     <MESSAGE value="Lesson 26" />
     <MESSAGE value="Lesson 28" />
@@ -389,6 +390,7 @@
     <MESSAGE value="Lesson 54.1" />
     <MESSAGE value="lesson 56" />
     <MESSAGE value="lesson 59" />
-    <option name="LAST_COMMIT_MESSAGE" value="lesson 59" />
+    <MESSAGE value="lesson 60" />
+    <option name="LAST_COMMIT_MESSAGE" value="lesson 60" />
   </component>
 </project>

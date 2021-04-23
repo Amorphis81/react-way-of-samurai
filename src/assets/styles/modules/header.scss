@@ -1,5 +1,8 @@
 .header{
   grid-area: header;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   background-color: green;
   background-repeat: no-repeat;
   -webkit-background-size: contain;
@@ -8,5 +11,18 @@
     display: block;
     width: 200px;
     height: 200px;
+  }
+  &__login{
+    margin-right: 20px;
+  }
+}
+
+.login-block{
+  &__link{
+    text-decoration: none;
+    color: #fff;
+    &:hover{
+      color: darken(#fff, 30%);
+    }
   }
 }
