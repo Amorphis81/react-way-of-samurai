@@ -1,10 +1,36 @@
 import React from "react";
 import avatar from "../../../assets/img/avatar.jpg";
 import {Link} from "react-router-dom";
+import axios from "axios";
 
 const UsersItem = props => {
-  const onFollowClick = () => props.follow(props.id);
-  const onUnFollowClick = () => props.unfollow(props.id);
+  const onFollowClick = () => {
+    axios.post(`https://social-network.samuraijs.com/api/1.0/follow/${props.id}`, {},{
+      withCredentials: true,
+      headers: {
+        'API-KEY': '260cf9b1-64cd-48df-8146-63bfe74b0e71'
+      }
+    })
+      .then(response => {
+        if (response.data.resultCode === 0){
+          props.follow(props.id)
+        }
+      });
+  };
+  const onUnFollowClick = () => {
+    axios.delete(`https://social-network.samuraijs.com/api/1.0/follow/${props.id}`, {
+      withCredentials: true,
+      headers: {
+        'API-KEY': '260cf9b1-64cd-48df-8146-63bfe74b0e71'
+      }
+    })
+      .then(response => {
+        if (response.data.resultCode === 0){
+          props.unfollow(props.id)
+        }
+      });
+
+  };
   const photoSrc = props.photoUrl ? props.photoUrl : avatar;
 
   const followToggle = () => {
