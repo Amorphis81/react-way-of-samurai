@@ -37,6 +37,8 @@ img{
   background-color: $accent;
   cursor: pointer;
   border: 1px solid transparent;
+  &:disabled{
+    background-color: grey;}
 }
 
 .avatar{

@@ -1,5 +1,6 @@
 import React from "react";
 import UsersItem from "./UsersItem/UsersItem";
+import {toggleFollowingProgress} from "../../redux/users-reducer";
 
 const Users = props => {
   const pagesCount = Math.ceil(props.totalUsersCount / props.pageSize);
@@ -18,8 +19,10 @@ const Users = props => {
     location={users.location}
     follow={props.follow}
     unfollow={props.unfollow}
+    followingInProgress={props.followingInProgress}
+    toggleFollowingProgress={props.toggleFollowingProgress}
   />);
-  
+
   return (
     <div className={'users'}>
       <div className={'pagination users__pagination'}>

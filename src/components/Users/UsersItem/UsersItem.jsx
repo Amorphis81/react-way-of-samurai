@@ -1,41 +1,38 @@
 import React from "react";
 import avatar from "../../../assets/img/avatar.jpg";
 import {Link} from "react-router-dom";
-import axios from "axios";
+import {usersAPI} from "../../../api/api";
 
 const UsersItem = props => {
   const onFollowClick = () => {
-    axios.post(`https://social-network.samuraijs.com/api/1.0/follow/${props.id}`, {},{
-      withCredentials: true,
-      headers: {
-        'API-KEY': '260cf9b1-64cd-48df-8146-63bfe74b0e71'
-      }
-    })
-      .then(response => {
-        if (response.data.resultCode === 0){
+    props.toggleFollowingProgress(true, props.id);
+
+    usersAPI.follow(props.id)
+      .then(data => {
+        if (data.resultCode === 0){
           props.follow(props.id)
         }
+        props.toggleFollowingProgress(false, props.id);
       });
   };
+
   const onUnFollowClick = () => {
-    axios.delete(`https://social-network.samuraijs.com/api/1.0/follow/${props.id}`, {
-      withCredentials: true,
-      headers: {
-        'API-KEY': '260cf9b1-64cd-48df-8146-63bfe74b0e71'
-      }
-    })
-      .then(response => {
-        if (response.data.resultCode === 0){
+    props.toggleFollowingProgress(true, props.id);
+
+    usersAPI.unfollow(props.id)
+      .then(data => {
+        if (data.resultCode === 0){
           props.unfollow(props.id)
         }
+        props.toggleFollowingProgress(false, props.id);
       });
 
   };
   const photoSrc = props.photoUrl ? props.photoUrl : avatar;
 
   const followToggle = () => {
-    return props.folowed ? <button onClick={onUnFollowClick} className="btn users-list__btn">unfollow</button> :
-                          <button onClick={onFollowClick} className="btn users-list__btn">follow</button>
+    return props.folowed ? <button disabled={props.followingInProgress.some(id => id === props.id)} onClick={onUnFollowClick} className="btn users-list__btn">unfollow</button> :
+                          <button disabled={props.followingInProgress.some(id => id === props.id)} onClick={onFollowClick} className="btn users-list__btn">follow</button>
   }
   return (
     <div className={'users-list__item'}>
