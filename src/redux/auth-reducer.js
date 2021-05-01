@@ -1,3 +1,6 @@
+import {headerAPI, usersAPI} from "../api/api";
+import {setCurrentPage, setTotalUsersCount, setUsers, toggleIsFetching} from "./users-reducer";
+
 const SET_USER_DATA = 'SET_USER_DATA';
 const UNFOLLOW = 'UNFOLLOW';
 
@@ -22,7 +25,18 @@ const authReducer = (state = initialState, action) => {
   }
 }
 
+
 export const setAuthUserData = (userId, login, email) => ({type: SET_USER_DATA, data: {userId, login, email}});
 
+export const getAuth = () => {
+  return dispatch => {
+    headerAPI.getAuth().then(data => {
+      if(data.resultCode === 0){
+        const {id, login, email} = data.data;
+        dispatch(setAuthUserData(id, login, email));
+      }
+    });
+  }
+}
 
 export default authReducer;
