@@ -8,6 +8,7 @@ import Settings from "./components/Settings/Settings";
 import DialogsContainer from "./components/Dialogs/DialogsContainer";
 import UsersContainer from "./components/Users/UsersContainer";
 import HeaderContainer from "./components/Header/HeaderContainer";
+import LoginPage from "./components/Login/Login";
 
 const App = () => {
   return (
@@ -16,21 +17,17 @@ const App = () => {
       <Navbar />
       <main className="app-wrapper-content">
         <Switch>
-          <Route path={'/profile/:userId?'}>
-            <ProfileContainer />
-          </Route>
-          <Route path={'/dialogs'}>
-            <DialogsContainer />
-          </Route>
-          <Route path={'/users'}>
-            <UsersContainer />
-          </Route>
-          <Route path={'/music'}>
-            <Music />
-          </Route>
-          <Route path={'/settings'}>
-            <Settings />
-          </Route>
+          <Route path={'/profile/:userId?'}><ProfileContainer /></Route>
+
+          <Route path={'/dialogs'}><DialogsContainer /></Route>
+
+          <Route path={'/users'}> <UsersContainer /> </Route>
+
+          <Route path={'/music'}> <Music /> </Route>
+
+          <Route path={'/settings'}> <Settings /></Route>
+
+          <Route path={'/login'}> <LoginPage /></Route>
         </Switch>
       </main>
     </div>
