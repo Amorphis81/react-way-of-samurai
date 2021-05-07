@@ -5,6 +5,8 @@ import Preloader from "../common/Preloader/Preloader";
 import {
   follow, getUsers, toggleFollowingProgress, unfollow
 } from "../../redux/users-reducer";
+import {widthAuthRedirect} from "../../hoc/WithAuthRedirect";
+import Dialogs from "../Dialogs/Dialogs";
 
 
 class UsersAPIComponent extends React.Component{
@@ -41,8 +43,8 @@ const mapStateToProps = state => {
   }
 }
 
-const UsersContainer = connect(mapStateToProps, {
+const UsersContainer = widthAuthRedirect (connect(mapStateToProps, {
   follow, unfollow, toggleFollowingProgress, getUsers
-})(UsersAPIComponent)
+})(UsersAPIComponent))
 
 export default UsersContainer;

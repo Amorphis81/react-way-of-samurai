@@ -15,8 +15,6 @@ const Dialogs = props => {
     props.updateNewMessageBody(text);
   }
 
-  if (!props.isAuth) return <Redirect to={"/login"} />
-
   return (
     <div className={'dialogs'}>
       <h2 className="h2 dialogs__title">Диалоги</h2>
