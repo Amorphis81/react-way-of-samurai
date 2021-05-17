@@ -1,6 +1,7 @@
 .profile{
   &-info{
     display: flex;
+    flex-direction: column;
     &__avatar{ margin-right: 10px; }
     &__descr{
       padding: 10px;

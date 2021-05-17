@@ -1,5 +1,6 @@
 import React from "react";
 import Preloader from "../../common/Preloader/Preloader";
+import ProfileStatus from "./ProfileStatus";
 
 const ProfileInfo = props => {
   if (!props.profile) {
@@ -25,28 +26,31 @@ const ProfileInfo = props => {
 
   return (
     <div className="profile-info">
-      <img className="avatar profile-info__avatar" src={props.profile.photos.small} alt="avatar"/>
-      <div className="profile-info__descr">
-        <div className="profile-info__row">
-          <div className="profile-info__caption">Full Name:</div>
-          <div className="profile-info__text">{fullName}</div>
-        </div>
-        <div className="profile-info__row">
-          <div className="profile-info__caption">About me:</div>
-          <div className="profile-info__text">{aboutMe}</div>
-        </div>
-        <div className="profile-info__row">
-          <div className="profile-info__caption">Job:</div>
-          <div className="profile-info__text job-row">
-            <div className="job-row__looking">{lookingForAJob}</div>
-            ({lookingForAJobDescription})
+      <div className="flex mb-6">
+        <img className="avatar profile-info__avatar" src={props.profile.photos.small} alt="avatar"/>
+        <div className="profile-info__descr">
+          <div className="profile-info__row">
+            <div className="profile-info__caption">Full Name:</div>
+            <div className="profile-info__text">{fullName}</div>
+          </div>
+          <div className="profile-info__row">
+            <div className="profile-info__caption">About me:</div>
+            <div className="profile-info__text">{aboutMe}</div>
+          </div>
+          <div className="profile-info__row">
+            <div className="profile-info__caption">Job:</div>
+            <div className="profile-info__text job-row">
+              <div className="job-row__looking">{lookingForAJob}</div>
+              ({lookingForAJobDescription})
+            </div>
+          </div>
+          <div className="profile-info__row">
+            <div className="profile-info__caption">Contacts:</div>
+            <div className="profile-info__text profile-contacts">{contacts}</div>
           </div>
         </div>
-        <div className="profile-info__row">
-          <div className="profile-info__caption">Contacts:</div>
-          <div className="profile-info__text profile-contacts">{contacts}</div>
-        </div>
       </div>
+      <ProfileStatus status={'test'}/>
     </div>
   )
 }
